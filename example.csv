@@ -1,0 +1,4 @@
+hostname,visiblename,groups,interfaces,proxy,templates,tags,macros,description
+172.254.254.3,生产mysql,Linux,"{""type"":""agent"",""port"":10050,""ip"":""172.254.254.3""}",proxy_1,"Template Module Cisco Inventory SNMPv2,Template App Apache by HTTP","app=nginx,version=v3","{$INSTANCE}=oracle,{$VERSION}=11g",
+172.254.254.4,生产oracle,"Linux,Weblogic","{""type"":""agent"",""port"":10050,""ip"":""172.254.254.3""},{""type"":""snmpv2"",""port"":161,""ip"":""172.254.254.3""}",proxy_1,"Template App Apache by HTTP,Template Module Cisco Inventory SNMPv2",app=http,{$SNMP_COMMUNITY}=public,
+172.254.254.4,生产oracle,Weblogic,"{""type"":""snmpv3"",""port"":161,""ip"":""172.254.254.3"",""securityname"": securityname,""authpassphrase"": authpassphrase,""privpassphrase"": privpassphrase,""authprotocol"": MD5,""privprotocol"": DES}",proxy_1,"Template App Apache by HTTP,Template Module Cisco Inventory SNMPv2",app=http,{$SNMP_COMMUNITY}=public,
